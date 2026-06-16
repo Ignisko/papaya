@@ -1,0 +1,437 @@
+/* 
+  Ultra-Minimalist Dark Mode
+*/
+:root {
+    --bg-night: #0B0C10;
+    --bg-panel: rgba(18, 20, 26, 0.95);
+    --text-primary: #EDEDED;
+    --text-secondary: #9A9DA3;
+    
+    --marian-blue: #4F86F7;
+    --regal-purple: #9D4EDD;
+    
+    /* Clean system font, removing traditional/slop fonts */
+    --font-main: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg-night);
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    line-height: 1.5;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.app-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Floating Graph Container */
+.main-content {
+    width: 100%;
+    height: 100%;
+    background: var(--bg-night);
+}
+
+.graph-container {
+    width: 100%;
+    height: 100%;
+    cursor: crosshair;
+}
+
+/* Toggle Menu Button */
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 30;
+    background: var(--bg-panel);
+    border: 1px solid #2a2d3d;
+    color: var(--text-primary);
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.toggle-btn:hover {
+    background: #2a2d3d;
+}
+
+/* Unified Collapsible Infobox */
+.infobox {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    width: 380px; /* Made fatter as requested */
+    background: var(--bg-panel);
+    border: 1px solid #2a2d3d;
+    border-radius: 8px;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3); /* Removed wide soft shadow to fix Impeccable slop rule */
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    transform-origin: top left;
+}
+
+.infobox.hidden {
+    transform: scale(0.97);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.infobox-header-tabs {
+    border-bottom: 1px solid #2a2d3d;
+    background: #151821;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.infobox-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px 8px;
+}
+
+.tabs-row {
+    display: flex;
+}
+
+.tab-btn {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 12px;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.tab-btn:hover {
+    color: var(--text-primary);
+}
+
+.tab-btn.active {
+    color: var(--text-primary);
+    border-bottom-color: var(--marian-blue);
+    background: rgba(255,255,255,0.03);
+}
+
+.infobox-content-wrapper {
+    padding: 16px;
+    max-height: calc(100vh - 140px);
+    overflow-y: auto;
+}
+
+/* Form Elements & Layout */
+.divider {
+    height: 1px;
+    background: #2a2d3d;
+    margin: 10px 0; /* Reduced margin */
+}
+
+.filter-section {
+    margin-bottom: 8px; /* Reduced margin */
+}
+
+.section-label {
+    display: block;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+    margin-bottom: 4px; /* Reduced margin */
+    font-weight: 600;
+}
+
+/* Category Legend/Filters */
+.category-filter-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2-column grid to save vertical space */
+    gap: 6px 8px;
+}
+
+.cat-chip {
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem; /* Slightly smaller text to fit grid */
+    color: var(--text-primary);
+    cursor: pointer;
+    user-select: none;
+}
+
+.cat-chip input[type="checkbox"] {
+    display: none; /* Hide default checkbox */
+}
+
+/* Custom Colored Checkbox / Dot */
+.cat-chip::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid var(--cat-color);
+    margin-right: 10px;
+    transition: all 0.2s ease;
+}
+
+.cat-chip:has(input:checked)::before {
+    background-color: var(--cat-color);
+    /* Removed box-shadow neon glow to align with Impeccable quality guidelines */
+}
+
+.cat-chip:has(input:not(:checked)) {
+    opacity: 0.5;
+}
+
+/* Select Dropdowns */
+.minimal-select {
+    width: 100%;
+    padding: 8px 10px;
+    background: #1B1E2B;
+    color: var(--text-primary);
+    border: 1px solid #3d425c;
+    border-radius: 6px;
+    outline: none;
+    font-family: inherit;
+    font-size: 0.85rem;
+}
+
+/* Standard Checkboxes (for edges, tooltips) */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    cursor: pointer;
+    color: var(--text-primary);
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-right: 8px;
+    width: 14px;
+    height: 14px;
+    accent-color: var(--marian-blue);
+}
+
+/* Gender Toggles */
+.toggle-row {
+    display: flex;
+    gap: 10px;
+}
+
+.toggle-chip {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    background: #1B1E2B;
+    border: 1px solid #3d425c;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    color: var(--text-secondary);
+    transition: all 0.2s;
+}
+
+.toggle-chip input[type="checkbox"] {
+    display: none;
+}
+
+.toggle-chip:has(input:checked) {
+    background: rgba(79, 134, 247, 0.2);
+    border-color: var(--marian-blue);
+    color: #fff;
+}
+
+/* Buttons */
+.button-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.btn-primary, .btn-secondary {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background: var(--marian-blue);
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #3a6cd9;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1px solid #3d425c;
+    color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+    background: #2a2d3d;
+}
+
+/* Minimalist Tooltip */
+.saint-tooltip {
+    background: var(--bg-panel) !important;
+    border: 1px solid #3d425c !important;
+    border-radius: 6px !important;
+    padding: 14px !important;
+    font-family: var(--font-main) !important;
+    color: var(--text-primary) !important;
+    max-width: 280px;
+    pointer-events: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6) !important;
+}
+
+.saint-tooltip .tooltip-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #fff;
+}
+
+.saint-tooltip .category {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #2a2d3d;
+}
+
+.saint-tooltip .description {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+.scene-tooltip {
+    color: inherit;
+    font-size: inherit;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+/* Side Panel */
+.side-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100vh;
+    background: var(--bg-panel);
+    border-left: 1px solid #2a2d3d;
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.side-panel.hidden {
+    transform: translateX(100%);
+}
+
+.side-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-bottom: 1px solid #2a2d3d;
+}
+
+.side-panel-header h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: #fff;
+}
+
+.side-panel-content {
+    flex: 1;
+    overflow-y: hidden; /* Prevent body scroll, inner list scrolls */
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.saints-list {
+    list-style: none;
+    flex: 1;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.saint-list-item {
+    padding: 12px;
+    border-bottom: 1px solid #1f2233;
+    cursor: pointer;
+    transition: background 0.2s;
+    border-radius: 4px;
+}
+
+.saint-list-item:hover {
+    background: #1f2233;
+}
+
+.saint-list-item-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.saint-list-item-cat {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
