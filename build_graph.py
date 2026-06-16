@@ -36,6 +36,11 @@ nodes.append({
     'country': 'Israel',
     'gender': 'male',
     'description': 'The Source and Summit of all Holiness',
+    'status': [],
+    'titles': [],
+    'occupations': [],
+    'patronages': [],
+    'orders': [],
     'value': 200,
     'fixed': True,
     'fx': 0, 'fy': 0, 'fz': 0
@@ -49,6 +54,11 @@ nodes.append({
     'country': 'Israel',
     'gender': 'female',
     'description': 'To Jesus through Mary. The greatest of all saints and safe pathway.',
+    'status': [],
+    'titles': [],
+    'occupations': [],
+    'patronages': [],
+    'orders': [],
     'value': 100,
     'fixed': True,
     'fx': 0, 'fy': -20, 'fz': 0
@@ -85,7 +95,12 @@ for n in raw_nodes:
         'century': century,
         'country': n['country'] if n['country'] else 'Unknown',
         'gender': 'male' if n['gender'].lower() == 'male' else 'female',
-        'description': ', '.join(n['orders']) if n['orders'] else '',
+        'status': n.get('status', []),
+        'titles': n.get('titles', []),
+        'occupations': n.get('occupations', []),
+        'patronages': n.get('patronages', []),
+        'orders': n.get('orders', []),
+        'description': ', '.join(n.get('orders', [])) if n.get('orders', []) else '',
         'value': value
     })
     

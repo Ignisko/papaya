@@ -84,11 +84,19 @@ document.addEventListener('DOMContentLoaded', () => {
         .nodeVal(node => node.value / 5)
         .nodeLabel(node => {
             if (!enableTooltipsCb.checked) return '';
+            
+            let extraInfo = '';
+            if (node.status && node.status.length) extraInfo += `<div><strong>Status:</strong> ${node.status.join(', ')}</div>`;
+            if (node.titles && node.titles.length) extraInfo += `<div><strong>Title:</strong> ${node.titles.join(', ')}</div>`;
+            if (node.occupations && node.occupations.length) extraInfo += `<div><strong>Vocation:</strong> ${node.occupations.join(', ')}</div>`;
+            if (node.orders && node.orders.length) extraInfo += `<div><strong>Order:</strong> ${node.orders.join(', ')}</div>`;
+            if (node.patronages && node.patronages.length) extraInfo += `<div><strong>Patron of:</strong> ${node.patronages.slice(0, 3).join(', ')}${node.patronages.length > 3 ? '...' : ''}</div>`;
+
             return `
                 <div class="saint-tooltip">
                     <div class="tooltip-title">${node.name}</div>
                     <div class="category">${node.category}</div>
-                    <div class="description">${node.description}</div>
+                    <div class="description" style="margin-top: 8px; font-size: 0.85em;">${extraInfo}</div>
                 </div>
             `;
         })
