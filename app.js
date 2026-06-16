@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         currentFilteredNodes = filteredNodes;
-        saintsCountSpan.textContent = filteredNodes.length;
+        saintsCountSpan.textContent = fullCatalogNodes.length;
         
         Graph.graphData({
             nodes: [...filteredNodes],
@@ -231,24 +231,70 @@ document.addEventListener('DOMContentLoaded', () => {
         const query = saintsSearch.value.toLowerCase();
         saintsListUl.innerHTML = '';
         
-        currentFilteredNodes.filter(n => n.name.toLowerCase().includes(query)).forEach(node => {
+        fullCatalogNodes.filter(n => n.name.toLowerCase().includes(query)).forEach(catalogNode => {
             const li = document.createElement('li');
             li.className = 'saint-list-item';
             li.innerHTML = `
-                <div class="saint-list-item-name">${node.name}</div>
-                <div class="saint-list-item-cat" style="color: ${categoryColors[node.category] || '#9A9DA3'}">${node.category}</div>
+                <div class="saint-list-item-name">${catalogNode.name}</div>
+                <div class="saint-list-item-cat" style="color: ${categoryColors[catalogNode.category] || '#9A9DA3'}">${catalogNode.category}</div>
             `;
             
             li.addEventListener('click', () => {
-                const distRatio = 1 + 60 / Math.hypot(node.x, node.y, node.z);
-                const newPos = node.x || node.y || node.z
-                    ? { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }
-                    : { x: 0, y: 0, z: 150 };
-                
-                Graph.cameraPosition(newPos, node, 2000);
+                const graphNode = currentFilteredNodes.find(gn => gn.id === catalogNode.id);
+                if (graphNode) {
+                    // It's in the graph, fly to it
+                    const distRatio = 1 + 60 / Math.hypot(graphNode.x, graphNode.y, graphNode.z);
+                    const newPos = graphNode.x || graphNode.y || graphNode.z
+                        ? { x: graphNode.x * distRatio, y: graphNode.y * distRatio, z: graphNode.z * distRatio }
+                        : { x: 0, y: 0, z: 150 };
+                    
+                    Graph.cameraPosition(newPos, graphNode, 2000);
+                } else {
+                    // It's only in the catalog, show modal
+                    showSaintDetailsModal(catalogNode);
+                }
             });
             saintsListUl.appendChild(li);
         });
+    }
+
+    function showSaintDetailsModal(node) {
+        let extraInfo = '';
+        if (node.status && node.status.length) extraInfo += `<div><strong>Status:</strong> ${node.status.join(', ')}</div>`;
+        if (node.titles && node.titles.length) extraInfo += `<div><strong>Title:</strong> ${node.titles.join(', ')}</div>`;
+        if (node.occupations && node.occupations.length) extraInfo += `<div><strong>Vocation:</strong> ${node.occupations.join(', ')}</div>`;
+        if (node.orders && node.orders.length) extraInfo += `<div><strong>Order:</strong> ${node.orders.join(', ')}</div>`;
+        if (node.patronages && node.patronages.length) extraInfo += `<div><strong>Patron of:</strong> ${node.patronages.slice(0, 3).join(', ')}${node.patronages.length > 3 ? '...' : ''}</div>`;
+
+        const detailDiv = document.createElement('div');
+        detailDiv.className = 'saint-details-modal';
+        detailDiv.style.position = 'fixed';
+        detailDiv.style.top = '50%';
+        detailDiv.style.left = '50%';
+        detailDiv.style.transform = 'translate(-50%, -50%)';
+        detailDiv.style.background = '#1C1C1F';
+        detailDiv.style.border = '1px solid #323232';
+        detailDiv.style.padding = '24px';
+        detailDiv.style.borderRadius = '12px';
+        detailDiv.style.boxShadow = '0 10px 40px rgba(0,0,0,0.8)';
+        detailDiv.style.zIndex = '1000';
+        detailDiv.style.color = '#EDEDED';
+        detailDiv.style.minWidth = '320px';
+        detailDiv.style.fontFamily = "'Outfit', sans-serif";
+        
+        detailDiv.innerHTML = `
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                <h2 style="margin-top: 0; margin-bottom: 4px; font-weight: 500;">${node.name}</h2>
+                <button class="close-modal-btn" style="background: none; border: none; color: #9A9DA3; cursor: pointer;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </button>
+            </div>
+            <div style="color: ${categoryColors[node.category] || '#9A9DA3'}; margin-bottom: 16px; font-weight: 600; font-size: 0.9em;">${node.category}</div>
+            <div style="font-size: 0.9em; line-height: 1.6; color: #D1D1D1;">${extraInfo || '<em>No additional details available.</em>'}</div>
+        `;
+        
+        detailDiv.querySelector('.close-modal-btn').addEventListener('click', () => detailDiv.remove());
+        document.body.appendChild(detailDiv);
     }
 
     window.addEventListener('resize', () => {

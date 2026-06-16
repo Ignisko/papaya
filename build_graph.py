@@ -94,7 +94,7 @@ for n in raw_nodes:
         'category': category,
         'century': century,
         'country': n['country'] if n['country'] else 'Unknown',
-        'gender': 'male' if n['gender'].lower() == 'male' else 'female',
+        'gender': 'male' if n.get('gender') and n['gender'].lower() == 'male' else 'female',
         'status': n.get('status', []),
         'titles': n.get('titles', []),
         'occupations': n.get('occupations', []),
@@ -130,13 +130,43 @@ for n in raw_nodes:
                 'edgeType': 'lineage' # We'll group influence and mentorship as lineage
             })
 
+# Load Full Catalog Saints
+with open('wikidata_saints_full.json', 'r', encoding='utf-8') as f:
+    raw_full_nodes = json.load(f)
+
+fullCatalogNodes = []
+for n in raw_full_nodes:
+    try:
+        birth = int(n['birthYear']) if n['birthYear'] else 0
+        death = int(n['deathYear']) if n['deathYear'] else birth
+        century_num = (death // 100) + 1
+        century = f"{century_num}th" if century_num > 0 else "BCE"
+    except:
+        century = "Unknown"
+        
+    fullCatalogNodes.append({
+        'id': n['id'],
+        'name': n['name'],
+        'category': assign_category(n['orders']),
+        'century': century,
+        'country': n['country'] if n['country'] else 'Unknown',
+        'gender': 'male' if n.get('gender') and n['gender'].lower() == 'male' else 'female',
+        'status': n.get('status', []),
+        'titles': n.get('titles', []),
+        'occupations': n.get('occupations', []),
+        'patronages': n.get('patronages', []),
+        'orders': n.get('orders', []),
+        'description': ', '.join(n.get('orders', [])) if n.get('orders', []) else ''
+    })
+
 # Save to data.js
 js_content = f"""
 const saintsNodes = {json.dumps(nodes, indent=2)};
 const saintsEdges = {json.dumps(edges, indent=2)};
+const fullCatalogNodes = {json.dumps(fullCatalogNodes, indent=2)};
 """
 
 with open('data.js', 'w', encoding='utf-8') as f:
     f.write(js_content)
     
-print(f"Generated data.js with {len(nodes)} nodes and {len(edges)} edges.")
+print(f"Generated data.js with {len(nodes)} graph nodes, {len(edges)} edges, and {len(fullCatalogNodes)} catalog nodes.")
