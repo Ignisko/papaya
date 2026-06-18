@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize 3D Graph
     const Graph = ForceGraph3D()(chartDom)
-        .backgroundColor('rgba(0,0,0,0)')
+        .backgroundColor('#F8FAFC')
         .nodeColor(node => categoryColors[node.category] || '#D4AF37')
         .nodeVal(node => node.value / 5)
         .nodeLabel(node => {
@@ -103,11 +103,11 @@ document.addEventListener('DOMContentLoaded', () => {
         .onNodeHover(node => chartDom.style.cursor = node ? 'pointer' : null)
         .linkWidth(link => link.edgeType === 'spiritual' ? 1.5 : 0.5)
         .linkColor(link => {
-            if (link.edgeType === 'spiritual') return 'rgba(79, 134, 247, 0.4)';
-            if (link.edgeType === 'lineage') return 'rgba(160, 165, 170, 0.15)';
+            if (link.edgeType === 'spiritual') return 'rgba(29, 78, 216, 0.4)';
+            if (link.edgeType === 'lineage') return 'rgba(148, 163, 184, 0.3)';
             if (link.edgeType === 'martyrdom') return 'rgba(166, 25, 46, 0.5)'; // red for martyrs
             if (link.edgeType === 'canonization') return 'rgba(197, 160, 40, 0.4)'; // gold for popes
-            return 'rgba(160, 165, 170, 0.2)';
+            return 'rgba(100, 116, 139, 0.2)';
         })
         .linkDirectionalParticles(link => link.edgeType === 'spiritual' ? 2 : 0)
         .linkDirectionalParticleWidth(link => link.edgeType === 'spiritual' ? 2 : 0)
@@ -210,6 +210,24 @@ document.addEventListener('DOMContentLoaded', () => {
         catalogBtn.style.display = 'block';
     }
 
+    // Select / Clear All Categories
+    const clearAllCatsBtn = document.getElementById('clear-all-cats');
+    const selectAllCatsBtn = document.getElementById('select-all-cats');
+
+    if (clearAllCatsBtn) {
+        clearAllCatsBtn.addEventListener('click', () => {
+            catCheckboxes.forEach(cb => cb.checked = false);
+            renderGraph();
+        });
+    }
+
+    if (selectAllCatsBtn) {
+        selectAllCatsBtn.addEventListener('click', () => {
+            catCheckboxes.forEach(cb => cb.checked = true);
+            renderGraph();
+        });
+    }
+
     toggleBtn.addEventListener('click', () => {
         if (infobox.classList.contains('hidden')) {
             openInfobox();
@@ -272,25 +290,25 @@ document.addEventListener('DOMContentLoaded', () => {
         detailDiv.style.top = '50%';
         detailDiv.style.left = '50%';
         detailDiv.style.transform = 'translate(-50%, -50%)';
-        detailDiv.style.background = '#1C1C1F';
-        detailDiv.style.border = '1px solid #323232';
+        detailDiv.style.background = '#FFFFFF';
+        detailDiv.style.border = '1px solid #E2E8F0';
         detailDiv.style.padding = '24px';
         detailDiv.style.borderRadius = '12px';
-        detailDiv.style.boxShadow = '0 10px 40px rgba(0,0,0,0.8)';
+        detailDiv.style.boxShadow = '0 12px 36px rgba(15, 23, 42, 0.08)';
         detailDiv.style.zIndex = '1000';
-        detailDiv.style.color = '#EDEDED';
+        detailDiv.style.color = '#1E293B';
         detailDiv.style.minWidth = '320px';
         detailDiv.style.fontFamily = "'Outfit', sans-serif";
         
         detailDiv.innerHTML = `
             <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-                <h2 style="margin-top: 0; margin-bottom: 4px; font-weight: 500;">${node.name}</h2>
-                <button class="close-modal-btn" style="background: none; border: none; color: #9A9DA3; cursor: pointer;">
+                <h2 style="margin-top: 0; margin-bottom: 4px; font-weight: 600;">${node.name}</h2>
+                <button class="close-modal-btn" style="background: none; border: none; color: #64748B; cursor: pointer;">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
                 </button>
             </div>
-            <div style="color: ${categoryColors[node.category] || '#9A9DA3'}; margin-bottom: 16px; font-weight: 600; font-size: 0.9em;">${node.category}</div>
-            <div style="font-size: 0.9em; line-height: 1.6; color: #D1D1D1;">${extraInfo || '<em>No additional details available.</em>'}</div>
+            <div style="color: ${categoryColors[node.category] || '#64748B'}; margin-bottom: 16px; font-weight: 600; font-size: 0.9em;">${node.category}</div>
+            <div style="font-size: 0.9em; line-height: 1.6; color: #475569;">${extraInfo || '<em>No additional details available.</em>'}</div>
         `;
         
         detailDiv.querySelector('.close-modal-btn').addEventListener('click', () => detailDiv.remove());
