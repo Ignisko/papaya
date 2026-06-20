@@ -1,170 +1,435 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description" content="An interactive 3D network graph of Catholic Saints and their connections across history.">
+
     <title>The Communion of Saints</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=10">
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="style.css?v=14">
+
 </head>
+
 <body>
+
     <div class="app-container">
+
         
-        <!-- Top Nav Buttons -->
-        <div class="nav-buttons" style="position: absolute; top: 20px; left: 20px; z-index: 30; display: flex; gap: 10px;">
-            <button id="toggle-panel" class="btn-primary" style="padding: 8px 16px; border-radius: 8px; box-shadow: var(--box-shadow);">Filters</button>
-            <button id="catalog-btn" class="btn-primary" style="padding: 8px 16px; border-radius: 8px; box-shadow: var(--box-shadow);">Catalog (<span id="saints-count">0</span>)</button>
-        </div>
 
+        <!-- Unified Expandable Sidebar Nav -->
 
-        <!-- Unified Infobox Panel -->
-        <aside class="infobox" id="infobox">
-            <div class="infobox-header-tabs">
-                <div class="infobox-title-row">
-                    <div style="display: flex; align-items: center; font-weight: 600; color: #EDEDED;">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
-                        Filters
-                    </div>
-                    <button id="close-infobox" class="close-btn" aria-label="Close Filters">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
-                    </button>
-                </div>
-                <div class="tabs-row">
-                    <button class="tab-btn active" data-tab="tab-status">Status</button>
-                    <button class="tab-btn" data-tab="tab-time"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; vertical-align: middle;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>Time period</button>
-                </div>
-            </div>
+        <aside id="sidebar-nav" class="sidebar-nav collapsed">
+
             
-            <div class="infobox-content-wrapper">
-                <!-- Status Tab Content -->
-                <div class="tab-content active" id="tab-status">
-                    <!-- Categories / Legend -->
-                    <div class="filter-section" style="margin-top: 4px;">
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; font-size: 0.85rem; font-weight: 600;">
-                            <span id="clear-all-cats" style="color: var(--text-secondary); cursor: pointer; transition: color 0.2s;">Wyczyść wszystko</span>
-                            <span id="select-all-cats" style="color: var(--marian-blue); cursor: pointer; transition: color 0.2s;">Zaznacz wszystko</span>
-                        </div>
-                        <div class="category-filter-grid" id="category-filters" style="display: flex; flex-direction: column; gap: 10px;">
-                            <label class="cat-chip active" data-cat="The Way of Ordinary Life" style="--cat-color: #F28C28">
-                                <input type="checkbox" checked> <span class="custom-checkbox"></span> Ordinary Life
-                            </label>
-                            <label class="cat-chip active" data-cat="The Way of Contemplation" style="--cat-color: #8B7355">
-                                <input type="checkbox" checked> <span class="custom-checkbox"></span> Contemplation
-                            </label>
-                            <label class="cat-chip active" data-cat="The Way of Poverty & Joy" style="--cat-color: #228B22">
-                                <input type="checkbox" checked> <span class="custom-checkbox"></span> Poverty & Joy
-                            </label>
-                            <label class="cat-chip active" data-cat="The Way of Truth" style="--cat-color: #64748b">
-                                <input type="checkbox" checked> <span class="custom-checkbox"></span> Way of Truth
-                            </label>
-                            <label class="cat-chip active" data-cat="The Way of Action & Discernment" style="--cat-color: #A6192E">
-                                <input type="checkbox" checked> <span class="custom-checkbox"></span> Action & Discernment
-                            </label>
-                            <label class="cat-chip active" data-cat="The Way of Stability" style="--cat-color: #5A544F">
-                                <input type="checkbox" checked> <span class="custom-checkbox"></span> Stability
-                            </label>
-                            <label class="cat-chip active" data-cat="Holy Men and Women" style="--cat-color: #C5A028">
-                                <input type="checkbox" checked> <span class="custom-checkbox"></span> Holy Men/Women
-                            </label>
-                            <label class="cat-chip active" data-cat="Mother of God" style="--cat-color: #4F86F7">
-                                <input type="checkbox" checked> <span class="custom-checkbox"></span> Mother of God
-                            </label>
-                        </div>
-                    </div>
 
-                    <div class="divider"></div>
+            <!-- Top Toggle & Title -->
 
-                    <!-- Gender Filter -->
-                    <div class="filter-section">
-                        <label class="section-label">Gender</label>
-                        <div class="toggle-row">
-                            <label class="toggle-chip active" id="gender-male-label">
-                                <input type="checkbox" id="gender-male" checked> Men
-                            </label>
-                            <label class="toggle-chip active" id="gender-female-label">
-                                <input type="checkbox" id="gender-female" checked> Women
-                            </label>
-                        </div>
-                    </div>
+            <div class="sidebar-top">
 
-                    <div class="divider"></div>
+            <!-- When COLLAPSED: cross (icon 1) fades to sidebar+> (icon 2) on hover -->
 
-                    <!-- Country Filter -->
-                    <div class="filter-section">
-                        <label class="section-label" for="country-filter">Country</label>
-                        <select id="country-filter" class="minimal-select">
-                            <option value="All">All Countries</option>
-                        </select>
-                    </div>
-                    
-                    <div class="divider"></div>
-                    <div class="button-row">
-                        <button id="reset-view-status" class="btn-secondary" style="width: 100%;">Reset Filters</button>
-                    </div>
+                <button type="button" id="sidebar-toggle-btn" class="nav-icon-btn toggle-logo-btn sidebar-open-btn" data-tooltip="Open sidebar">
+
+                    <!-- Icon 1: Cross (default, disappears on hover) -->
+
+                    <svg class="cross-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+
+                        <path d="M12 2v20M6 8h12"/>
+
+                    </svg>
+
+                    <!-- Icon 2: Sidebar + > (appears on hover) -->
+
+                    <svg class="open-sidebar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+                        <rect x="3" y="3" width="18" height="18" rx="2"/>
+
+                        <line x1="9" y1="3" x2="9" y2="21"/>
+
+                        <polyline points="13 10 16 12 13 14"/>
+
+                    </svg>
+
+                </button>
+
+                <!-- When EXPANDED: brand title + close button (icons 3 & 4) -->
+
+                <div class="sidebar-brand">
+
+                    <svg class="idiota-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+
+                        <path d="M12 2v20M6 8h12"/>
+
+                    </svg>
+
+                    <span class="sidebar-title">Communion of Saints</span>
+
                 </div>
 
-                <!-- Time Period Tab Content -->
-                <div class="tab-content" id="tab-time" style="display: none;">
-                    <!-- Century Filter -->
-                    <div class="filter-section">
-                        <label class="section-label" for="era-filter">Century/Era</label>
-                        <select id="era-filter" class="minimal-select">
-                            <option value="All">All Centuries</option>
-                        </select>
-                    </div>
+                <!-- Icon 3 (neutral) fades to Icon 4 (sidebar+<) on hover -->
 
-                    <div class="divider"></div>
+                <button type="button" id="sidebar-close-btn" class="nav-icon-btn close-logo-btn" data-tooltip="Close sidebar">
 
-                    <!-- Connection Type Filter -->
-                    <div class="filter-section">
-                        <label class="section-label" for="connection-filter">Connection Types</label>
-                        <select id="connection-filter" class="minimal-select">
-                            <option value="All">All Connections</option>
-                            <option value="Spiritual">Spiritual (to Mary)</option>
-                            <option value="Lineage">Lineage (by Country)</option>
-                            <option value="Martyrdom">Martyrdom Clusters</option>
-                            <option value="Canonization">Canonization Hubs</option>
-                            <option value="None">None</option>
-                        </select>
-                    </div>
+                    <!-- Icon 3: Neutral sidebar (default) -->
 
-                    <div class="divider"></div>
+                    <svg class="neutral-sidebar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 
-                    <!-- Toggle Tooltips -->
-                    <div class="filter-section">
-                        <label class="checkbox-label" style="margin-bottom: 0;"><input type="checkbox" id="enable-tooltips" checked> Show Infoboxes</label>
-                    </div>
-                    
-                    <div class="divider"></div>
-                    <div class="button-row">
-                        <button id="reset-view-time" class="btn-secondary" style="width: 100%;">Reset Filters</button>
-                    </div>
+                        <rect x="3" y="3" width="18" height="18" rx="2"/>
+
+                        <line x1="9" y1="3" x2="9" y2="21"/>
+
+                    </svg>
+
+                    <!-- Icon 4: Sidebar + < (appears on hover) -->
+
+                    <svg class="close-sidebar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+                        <rect x="3" y="3" width="18" height="18" rx="2"/>
+
+                        <line x1="9" y1="3" x2="9" y2="21"/>
+
+                        <polyline points="16 10 13 12 16 14"/>
+
+                    </svg>
+
+                </button>
+
+            </div>
+
+
+
+            <div class="sidebar-scrollable-content">
+
+                <!-- Action Pills -->
+
+                <div class="sidebar-actions">
+
+                    <button type="button" id="nav-catalog-btn" class="pill-btn" data-tooltip="Search saints">
+
+                        <i class="ph-bold ph-magnifying-glass"></i>
+
+                        <span class="pill-text">Search saints (<span class="saints-count-val">0</span>)</span>
+
+                    </button>
+
                 </div>
+
             </div>
+
         </aside>
 
-        <!-- Saints List Side Panel -->
-        <aside class="side-panel hidden" id="saints-side-panel">
-            <div class="side-panel-header">
-                <h2 id="side-panel-title">Saints</h2>
-                <button id="close-side-panel" class="close-btn">&times;</button>
-            </div>
-            <div class="side-panel-content">
-                <input type="text" id="saints-search" class="minimal-select" placeholder="Search saints...">
-                <ul id="saints-list-ul" class="saints-list"></ul>
-            </div>
-        </aside>
+
+
+        <!-- Main Content -->
 
         <main class="main-content">
+
+            <!-- Top Filter Bar -->
+
+            <div class="top-filter-bar" id="top-filter-bar">
+
+                <button type="button" class="filter-bar-btn" data-popout="popout-status">
+
+                    <i class="ph-bold ph-medal"></i> Status <span class="filter-count hidden" id="count-status"></span> <i class="ph-bold ph-caret-down"></i>
+
+                </button>
+
+                <button type="button" class="filter-bar-btn" data-popout="popout-time">
+
+                    <i class="ph-bold ph-clock"></i> Time period <span class="filter-count hidden" id="count-time"></span> <i class="ph-bold ph-caret-down"></i>
+
+                </button>
+
+                <button type="button" class="filter-bar-btn" data-popout="popout-country">
+
+                    <i class="ph-bold ph-globe-hemisphere-west"></i> Country <span class="filter-count hidden" id="count-country"></span> <i class="ph-bold ph-caret-down"></i>
+
+                </button>
+
+                <button type="button" class="filter-bar-btn" data-popout="popout-connection">
+
+                    <i class="ph-bold ph-git-branch"></i> Connection <span class="filter-count hidden" id="count-connection"></span> <i class="ph-bold ph-caret-down"></i>
+
+                </button>
+                
+                <div class="filter-divider"></div>
+
+                <label class="filter-checkbox-btn">
+                    <input type="checkbox" id="enable-tooltips" checked> Infoboxes
+                </label>
+
+                <button type="button" id="nav-reset-btn" class="filter-bar-btn" style="margin-left: 8px; border-color: rgba(255,255,255,0.2);">
+                    <i class="ph-bold ph-arrow-counter-clockwise"></i> Reset
+                </button>
+
+            </div>
+
+
+
+            <!-- Filter Popouts -->
+
+            <div id="popout-status" class="filter-popout hidden">
+
+                <div class="popout-header">
+
+                    <span class="popout-title">Status</span>
+
+                    <div class="tab-actions">
+
+                        <span id="clear-all-cats" class="tab-action-link">Clear</span>
+
+                        <span id="select-all-cats" class="tab-action-link accent">Select all</span>
+
+                    </div>
+
+                </div>
+
+                <div class="popout-content">
+
+                    <div class="category-filter-grid" id="category-filters">
+
+                        <label class="cat-chip active" data-cat="Pope" style="--cat-color: #C5A028">
+
+                            <input type="checkbox" checked> <span class="custom-checkbox"></span> <span class="cat-dot"></span> Pope
+
+                        </label>
+
+                        <label class="cat-chip active" data-cat="Bishop" style="--cat-color: #8B7355">
+
+                            <input type="checkbox" checked> <span class="custom-checkbox"></span> <span class="cat-dot"></span> Bishop
+
+                        </label>
+
+                        <label class="cat-chip active" data-cat="Priest" style="--cat-color: #228B22">
+
+                            <input type="checkbox" checked> <span class="custom-checkbox"></span> <span class="cat-dot"></span> Priest
+
+                        </label>
+
+                        <label class="cat-chip active" data-cat="Religious" style="--cat-color: #5A544F">
+
+                            <input type="checkbox" checked> <span class="custom-checkbox"></span> <span class="cat-dot"></span> Religious
+
+                        </label>
+
+                        <label class="cat-chip active" data-cat="Royalty" style="--cat-color: #A6192E">
+
+                            <input type="checkbox" checked> <span class="custom-checkbox"></span> <span class="cat-dot"></span> Royalty
+
+                        </label>
+
+                        <label class="cat-chip active" data-cat="Layperson" style="--cat-color: #F28C28">
+
+                            <input type="checkbox" checked> <span class="custom-checkbox"></span> <span class="cat-dot"></span> Layperson
+
+                        </label>
+
+                        <label class="cat-chip active" data-cat="Mother of God" style="--cat-color: #4F86F7">
+
+                            <input type="checkbox" checked> <span class="custom-checkbox"></span> <span class="cat-dot"></span> Mother of God
+
+                        </label>
+
+                    </div>
+
+                    <div class="divider" style="margin: 12px 0;"></div>
+
+                    <label class="tab-sub-label">Gender</label>
+
+                    <div class="toggle-row">
+
+                        <label class="toggle-chip active" id="gender-male-label">
+
+                            <input type="checkbox" id="gender-male" checked> Men
+
+                        </label>
+
+                        <label class="toggle-chip active" id="gender-female-label">
+
+                            <input type="checkbox" id="gender-female" checked> Women
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div id="popout-time" class="filter-popout hidden">
+
+                <div class="popout-header">
+
+                    <span class="popout-title">Time period</span>
+
+                    <div class="tab-actions">
+
+                        <span id="clear-all-centuries" class="tab-action-link">Clear</span>
+
+                        <span id="select-all-centuries" class="tab-action-link accent">Select all</span>
+
+                    </div>
+
+                </div>
+
+                <div class="popout-content">
+
+                    <div class="century-chip-grid" id="century-filters">
+
+                        <button type="button" class="century-chip active" data-century-min="0" data-century-max="999">Early</button>
+
+                        <button type="button" class="century-chip active" data-century-min="1000" data-century-max="1099">11th</button>
+
+                        <button type="button" class="century-chip active" data-century-min="1100" data-century-max="1199">12th</button>
+
+                        <button type="button" class="century-chip active" data-century-min="1200" data-century-max="1299">13th</button>
+
+                        <button type="button" class="century-chip active" data-century-min="1300" data-century-max="1399">14th</button>
+
+                        <button type="button" class="century-chip active" data-century-min="1400" data-century-max="1499">15th</button>
+
+                        <button type="button" class="century-chip active" data-century-min="1500" data-century-max="1599">16th</button>
+
+                        <button type="button" class="century-chip active" data-century-min="1600" data-century-max="1699">17th</button>
+
+                        <button type="button" class="century-chip active" data-century-min="1700" data-century-max="1799">18th</button>
+
+                        <button type="button" class="century-chip active" data-century-min="1800" data-century-max="1899">19th</button>
+
+                        <button type="button" class="century-chip active" data-century-min="1900" data-century-max="1999">20th</button>
+
+                        <button type="button" class="century-chip active" data-century-min="2000" data-century-max="2100">21st</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div id="popout-country" class="filter-popout hidden">
+
+                <div class="popout-content" style="padding: 16px; width: 280px;">
+
+                    <label class="section-label" style="margin-bottom: 8px;">Country</label>
+
+                    <div class="country-search-container" style="position: relative;">
+
+                        <input type="text" id="country-search-input" class="minimal-select" style="width: 100%; padding-right: 30px;" placeholder="Search or select country...">
+
+                        <input type="hidden" id="country-filter" value="All">
+
+                        <i class="ph-bold ph-caret-down" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: var(--text-secondary); pointer-events: none;"></i>
+
+                    </div>
+
+                    <ul id="country-suggestions-ul" class="suggestions-list" style="max-height: 200px; overflow-y: auto; margin-top: 8px; padding-left: 0; list-style-type: none; border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; background: rgba(15,23,42,0.95); display: none; position: absolute; width: calc(100% - 32px); z-index: 110;">
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+
+            <div id="popout-connection" class="filter-popout hidden">
+
+                <div class="popout-content" style="padding: 12px;">
+
+                    <label class="section-label" for="connection-filter" style="margin-bottom: 8px;">Connection type</label>
+
+                    <select id="connection-filter" class="minimal-select" style="width: 100%;">
+
+                        <option value="All">All Connections</option>
+
+                        <option value="Spiritual">Spiritual (to Mary)</option>
+
+                        <option value="Lineage">Lineage (Mentorship)</option>
+
+                        <option value="Family">Family IRL</option>
+
+                        <option value="Founder">Spiritual Father</option>
+
+                        <option value="None">None</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
             <div id="graph-container" class="graph-container"></div>
+
         </main>
+
+
+
+        <!-- Search Modal Overlay -->
+
+        <div id="search-modal" class="search-modal hidden">
+
+            <div class="search-modal-content">
+
+                <div class="search-modal-header">
+
+                    <i class="ph-bold ph-magnifying-glass search-icon"></i>
+
+                    <input type="text" id="saints-search" class="search-modal-input" placeholder="Search by name...">
+
+                    <button id="close-search-modal" class="nav-icon-btn close-btn" title="Close search">
+
+                        <i class="ph-bold ph-x"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="search-modal-body">
+
+                    <ul id="saints-list-ul" class="saints-list"></ul>
+
+                </div>
+
+                <div class="search-modal-footer">
+
+                    <span>Press <kbd>ESC</kbd> or click outside to close. Catalog: <span class="saints-count-val">0</span> saints.</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
+
+
     <script src="https://unpkg.com/3d-force-graph"></script>
+
     <script src="data.js?v=11"></script>
+
     <script src="app.js?v=11"></script>
+
 </body>
+
 </html>
