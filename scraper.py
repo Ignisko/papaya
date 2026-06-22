@@ -5,7 +5,7 @@ import json
 
 url = 'https://query.wikidata.org/sparql'
 query = """
-SELECT ?saint ?saintLabel ?birthYear ?deathYear ?orderLabel ?studentOf ?studentOfLabel ?influencedBy ?influencedByLabel ?genderLabel ?countryLabel ?statusLabel ?titleLabel ?occupationLabel ?patronageLabel
+SELECT ?saint ?saintLabel ?birthYear ?deathYear ?orderLabel ?studentOf ?studentOfLabel ?influencedBy ?influencedByLabel ?sibling ?spouse ?father ?mother ?child ?genderLabel ?countryLabel ?statusLabel ?titleLabel ?occupationLabel ?patronageLabel
 WHERE {
   ?saint wdt:P31 wd:Q5 .
   ?saint wdt:P411 ?status .
@@ -15,6 +15,11 @@ WHERE {
   OPTIONAL { ?saint wdt:P611 ?order . }
   OPTIONAL { ?saint wdt:P1066 ?studentOf . }
   OPTIONAL { ?saint wdt:P737 ?influencedBy . }
+  OPTIONAL { ?saint wdt:P3373 ?sibling . }
+  OPTIONAL { ?saint wdt:P26 ?spouse . }
+  OPTIONAL { ?saint wdt:P22 ?father . }
+  OPTIONAL { ?saint wdt:P25 ?mother . }
+  OPTIONAL { ?saint wdt:P40 ?child . }
   OPTIONAL { ?saint wdt:P21 ?gender . }
   OPTIONAL { ?saint wdt:P27 ?country . }
   OPTIONAL { ?saint wdt:P39 ?title . }
@@ -23,7 +28,7 @@ WHERE {
   
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
 }
-LIMIT 500
+LIMIT 200
 """
 headers = {
     'User-Agent': 'PapayaSaintsGraph/1.0 (ignac@example.com) python-requests/2.31.0',
@@ -60,7 +65,11 @@ if r.status_code == 200:
                 'patronages': set(),
                 'orders': set(),
                 'studentOf': set(),
-                'influencedBy': set()
+                'influencedBy': set(),
+                'sibling': set(),
+                'spouse': set(),
+                'parent': set(),
+                'child': set()
             }
             
         status = row.get('statusLabel', '')
@@ -93,6 +102,26 @@ if r.status_code == 200:
             influenced_by_id = influenced_by_url.split('/')[-1]
             nodes[s_id]['influencedBy'].add(influenced_by_id)
             
+        sibling_url = row.get('sibling', '')
+        if sibling_url:
+            nodes[s_id]['sibling'].add(sibling_url.split('/')[-1])
+            
+        spouse_url = row.get('spouse', '')
+        if spouse_url:
+            nodes[s_id]['spouse'].add(spouse_url.split('/')[-1])
+            
+        father_url = row.get('father', '')
+        if father_url:
+            nodes[s_id]['parent'].add(father_url.split('/')[-1])
+            
+        mother_url = row.get('mother', '')
+        if mother_url:
+            nodes[s_id]['parent'].add(mother_url.split('/')[-1])
+            
+        child_url = row.get('child', '')
+        if child_url:
+            nodes[s_id]['child'].add(child_url.split('/')[-1])
+            
     print(f"Extracted {len(nodes)} unique saints.")
     
     # Save to JSON
@@ -105,6 +134,10 @@ if r.status_code == 200:
         n['orders'] = list(n['orders'])
         n['studentOf'] = list(n['studentOf'])
         n['influencedBy'] = list(n['influencedBy'])
+        n['sibling'] = list(n['sibling'])
+        n['spouse'] = list(n['spouse'])
+        n['parent'] = list(n['parent'])
+        n['child'] = list(n['child'])
         
     with open('wikidata_saints.json', 'w', encoding='utf-8') as f:
         json.dump(list(nodes.values()), f, ensure_ascii=False, indent=2)

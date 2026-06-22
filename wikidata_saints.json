@@ -1,525 +1,9 @@
 [
   {
-    "id": "Q316600",
-    "name": "Winibald",
-    "birthYear": "702",
-    "deathYear": "761",
-    "gender": "male",
-    "country": "Germany",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "abbot"
-    ],
-    "occupations": [
-      "missionary",
-      "priest",
-      "monk"
-    ],
-    "patronages": [],
-    "orders": [
-      "Benedictines"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q316643",
-    "name": "Eberigisil",
-    "birthYear": "600",
-    "deathYear": "594",
-    "gender": "male",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "archbishop",
-      "Roman Catholic Bishop of Cologne"
-    ],
-    "occupations": [
-      "bishop",
-      "Catholic priest"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q316874",
-    "name": "Dagobert II",
-    "birthYear": "652",
-    "deathYear": "679",
-    "gender": "male",
-    "country": "Francia",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "king of Franks"
-    ],
-    "occupations": [
-      "monarch"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q316892",
-    "name": "Sigebert III",
-    "birthYear": "630",
-    "deathYear": "656",
-    "gender": "male",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "king of Franks"
-    ],
-    "occupations": [
-      "monarch"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q317029",
-    "name": "Theodoret",
-    "birthYear": "393",
-    "deathYear": "466",
-    "gender": "male",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "Catholic priest",
-      "historian",
-      "bishop",
-      "writer",
-      "church historian"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q317131",
-    "name": "Vincent Ferrer",
-    "birthYear": "1350",
-    "deathYear": "1419",
-    "gender": "male",
-    "country": "Kingdom of Valencia",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "missionary",
-      "friar",
-      "preacher",
-      "Catholic priest",
-      "writer"
-    ],
-    "patronages": [],
-    "orders": [
-      "Dominican Order"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q317236",
-    "name": "Coloman of Galicia-Lodomeria",
-    "birthYear": "1208",
-    "deathYear": "1241",
-    "gender": "male",
-    "country": "Hungary",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "Duke of Halych"
-    ],
-    "occupations": [
-      "politician"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q317887",
-    "name": "George Herbert",
-    "birthYear": "1593",
-    "deathYear": "1633",
-    "gender": "male",
-    "country": "Wales",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "Member of Parliament in the Parliament of England",
-      "Member of the 1625 Parliament",
-      "Member of the 1624-25 Parliament"
-    ],
-    "occupations": [
-      "politician",
-      "cleric",
-      "librettist",
-      "poet",
-      "priest",
-      "writer"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q318473",
-    "name": "Avvakum",
-    "birthYear": "1620",
-    "deathYear": "1682",
-    "gender": "male",
-    "country": "Tsardom of Russia",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "explorer",
-      "priest",
-      "writer"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q318504",
-    "name": "Abel of Reims",
-    "birthYear": "700",
-    "deathYear": "764",
-    "gender": "male",
-    "country": "France",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "abbot",
-      "bishop of Reims"
-    ],
-    "occupations": [
-      "Catholic priest",
-      "Catholic bishop"
-    ],
-    "patronages": [],
-    "orders": [
-      "Benedictines"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q318974",
-    "name": "Vincent of Saragossa",
-    "birthYear": "300",
-    "deathYear": "304",
-    "gender": "male",
-    "country": "Ancient Rome",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "deacon",
-      "latin catholic deacon"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [
-      "Q1393825"
-    ],
-    "influencedBy": []
-  },
-  {
-    "id": "Q233012",
-    "name": "Kinga of Poland",
-    "birthYear": "1224",
-    "deathYear": "1292",
-    "gender": "female",
-    "country": "Hungary",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "queen consort"
-    ],
-    "occupations": [
-      "religious sister",
-      "aristocrat"
-    ],
-    "patronages": [],
-    "orders": [
-      "Sisters Clarists of the Rule of Urban IV"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q234246",
-    "name": "Matilda of Ringelheim",
-    "birthYear": "896",
-    "deathYear": "968",
-    "gender": "female",
-    "country": "Kingdom of Germany",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "abbess"
-    ],
-    "occupations": [
-      "politician"
-    ],
-    "patronages": [],
-    "orders": [
-      "Benedictines"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q234521",
-    "name": "Jane Frances de Chantal",
-    "birthYear": "1572",
-    "deathYear": "1641",
-    "gender": "female",
-    "country": "France",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "mystic",
-      "nun",
-      "founder of Catholic religious community"
-    ],
-    "patronages": [],
-    "orders": [
-      "Order of the Visitation of Holy Mary"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q234689",
-    "name": "Monica of Hippo",
-    "birthYear": "332",
-    "deathYear": "387",
-    "gender": "female",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q272106",
-    "name": "Saint Laura",
-    "birthYear": "",
-    "deathYear": "864",
-    "gender": "female",
-    "country": "Emirate of Córdoba",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "abbess"
-    ],
-    "occupations": [
-      "nun"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q272180",
-    "name": "Æthelberht II",
-    "birthYear": "800",
-    "deathYear": "794",
-    "gender": "male",
-    "country": "Kingdom of East Anglia",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "King of East Anglia"
-    ],
-    "occupations": [
-      "sovereign"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q272212",
-    "name": "Æthelred of Mercia",
-    "birthYear": "601",
-    "deathYear": "716",
-    "gender": "male",
-    "country": "Kingdom of Mercia",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "King of Mercia"
-    ],
-    "occupations": [
-      "monarch"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q272498",
-    "name": "Brian Boru",
-    "birthYear": "941",
-    "deathYear": "1014",
-    "gender": "male",
-    "country": "Kingdom of Munster",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "King of Munster",
-      "High King of Ireland"
-    ],
-    "occupations": [],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q272987",
-    "name": "Saint Susanna",
-    "birthYear": "280",
-    "deathYear": "295",
-    "gender": "female",
-    "country": "http://www.wikidata.org/.well-known/genid/02c53973d1ae879241578a3593077afd",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q273053",
-    "name": "Papias of Hierapolis",
-    "birthYear": "60",
-    "deathYear": "150",
-    "gender": "male",
-    "country": "Asia",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "bishop"
-    ],
-    "occupations": [
-      "presbyter",
-      "priest",
-      "writer"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [
-      "Q328804"
-    ],
-    "influencedBy": []
-  },
-  {
-    "id": "Q273334",
-    "name": "Alphonsus Maria de Liguori",
-    "birthYear": "1696",
-    "deathYear": "1787",
-    "gender": "male",
-    "country": "Kingdom of Naples",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "Roman Catholic Bishop of Sant’Agata de’ Goti"
-    ],
-    "occupations": [
-      "composer",
-      "Catholic priest",
-      "poet",
-      "lawyer",
-      "writer",
-      "Catholic bishop"
-    ],
-    "patronages": [],
-    "orders": [
-      "Congregation of the Most Holy Redeemer"
-    ],
-    "studentOf": [
-      "Q178709",
-      "Q736065",
-      "Q1093725"
-    ],
-    "influencedBy": []
-  },
-  {
-    "id": "Q273335",
-    "name": "Alpaïs of Cudot",
-    "birthYear": "1155",
-    "deathYear": "1211",
-    "gender": "female",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q273705",
-    "name": "Jutta of Kulmsee",
-    "birthYear": "1200",
-    "deathYear": "1260",
+    "id": "Q269074",
+    "name": "Hemma of Gurk",
+    "birthYear": "973",
+    "deathYear": "1045",
     "gender": "female",
     "country": "Holy Roman Empire",
     "status": [
@@ -527,107 +11,84 @@
     ],
     "titles": [],
     "occupations": [
+      "aristocrat",
+      "count",
+      "Fürstin"
+    ],
+    "patronages": [],
+    "orders": [],
+    "studentOf": [],
+    "influencedBy": [],
+    "sibling": [],
+    "spouse": [],
+    "parent": [],
+    "child": []
+  },
+  {
+    "id": "Q269344",
+    "name": "Amalberga of Temse",
+    "birthYear": "741",
+    "deathYear": "772",
+    "gender": "female",
+    "country": "",
+    "status": [
+      "saint"
+    ],
+    "titles": [],
+    "occupations": [
+      "nun"
+    ],
+    "patronages": [],
+    "orders": [],
+    "studentOf": [],
+    "influencedBy": [],
+    "sibling": [],
+    "spouse": [],
+    "parent": [],
+    "child": []
+  },
+  {
+    "id": "Q269386",
+    "name": "Amalberga of Maubeuge",
+    "birthYear": "601",
+    "deathYear": "690",
+    "gender": "female",
+    "country": "",
+    "status": [
+      "saint"
+    ],
+    "titles": [],
+    "occupations": [
       "nun"
     ],
     "patronages": [],
     "orders": [
-      "Third Order of Saint Francis"
+      "Benedictines"
     ],
     "studentOf": [],
-    "influencedBy": []
+    "influencedBy": [],
+    "sibling": [],
+    "spouse": [
+      "de29d7ef81c3e16b7a14c3411efdaecc",
+      "29eee81809249227711da90288ec609b"
+    ],
+    "parent": [
+      "Q3104253"
+    ],
+    "child": [
+      "Q929800",
+      "Q267660",
+      "Q463631",
+      "Q2485199"
+    ]
   },
   {
-    "id": "Q273987",
-    "name": "Saint Lea",
-    "birthYear": "350",
-    "deathYear": "384",
+    "id": "Q269577",
+    "name": "Juliana of Liège",
+    "birthYear": "1193",
+    "deathYear": "1258",
     "gender": "female",
-    "country": "Ancient Rome",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q274091",
-    "name": "Dionysius Exiguus",
-    "birthYear": "475",
-    "deathYear": "544",
-    "gender": "male",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "mathematician",
-      "canon law jurist",
-      "translator",
-      "monk",
-      "writer"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q275470",
-    "name": "William of York",
-    "birthYear": "1050",
-    "deathYear": "1154",
-    "gender": "male",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "Catholic archbishop",
-      "Roman Catholic archbishop of York"
-    ],
-    "occupations": [
-      "Latin Catholic priest",
-      "Latin Catholic bishop"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q275624",
-    "name": "John Cantius",
-    "birthYear": "1390",
-    "deathYear": "1474",
-    "gender": "male",
-    "country": "Kingdom of Poland",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "physicist",
-      "theologian",
-      "priest",
-      "university teacher"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q275976",
-    "name": "Mary MacKillop",
-    "birthYear": "1842",
-    "deathYear": "1909",
-    "gender": "female",
-    "country": "Australia",
+    "country": "Southern Netherlands",
     "status": [
       "saint"
     ],
@@ -635,139 +96,92 @@
       "abbess"
     ],
     "occupations": [
+      "mystic",
       "religious sister",
-      "founder of Catholic religious community"
+      "composer",
+      "beguine"
     ],
     "patronages": [],
     "orders": [
-      "Sisters of St. Joseph of the Sacred Heart"
+      "Premonstratensian canonesses"
     ],
     "studentOf": [],
-    "influencedBy": []
+    "influencedBy": [],
+    "sibling": [],
+    "spouse": [],
+    "parent": [],
+    "child": []
   },
   {
-    "id": "Q276019",
-    "name": "Eustochia Smeralda Calafato",
-    "birthYear": "1434",
-    "deathYear": "1485",
-    "gender": "female",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "abbess"
-    ],
-    "occupations": [
-      "nun"
-    ],
-    "patronages": [],
-    "orders": [
-      "Poor Clares"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q276148",
-    "name": "Charalambos",
-    "birthYear": "87",
-    "deathYear": "202",
-    "gender": "male",
-    "country": "Ancient Rome",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "bishop",
-      "Catholic priest"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q276608",
-    "name": "Mary Euphrasia Pelletier",
-    "birthYear": "1796",
-    "deathYear": "1868",
+    "id": "Q269780",
+    "name": "Marie-Eugénie de Jésus",
+    "birthYear": "1817",
+    "deathYear": "1898",
     "gender": "female",
     "country": "France",
     "status": [
       "saint"
     ],
-    "titles": [
-      "superior general"
-    ],
+    "titles": [],
     "occupations": [
-      "religious sister",
-      "nun",
-      "founder of Catholic religious community",
-      "religious"
+      "nun"
     ],
     "patronages": [],
-    "orders": [],
+    "orders": [
+      "Religious of the Assumption"
+    ],
     "studentOf": [],
-    "influencedBy": []
+    "influencedBy": [],
+    "sibling": [],
+    "spouse": [],
+    "parent": [
+      "Q15969262"
+    ],
+    "child": []
   },
   {
-    "id": "Q279427",
-    "name": "Gaudentius of Brescia",
-    "birthYear": "327",
-    "deathYear": "410",
-    "gender": "male",
-    "country": "Ancient Rome",
+    "id": "Q269867",
+    "name": "Odile of Alsace",
+    "birthYear": "662",
+    "deathYear": "720",
+    "gender": "female",
+    "country": "",
     "status": [
       "saint"
     ],
     "titles": [
-      "bishop"
+      "Abbess of Mont Sainte-Odile Abbey"
     ],
     "occupations": [
-      "Catholic bishop",
-      "Catholic priest",
-      "writer"
+      "abbess"
     ],
     "patronages": [],
-    "orders": [],
+    "orders": [
+      "Benedictines"
+    ],
     "studentOf": [],
-    "influencedBy": []
+    "influencedBy": [],
+    "sibling": [
+      "Q1864939"
+    ],
+    "spouse": [],
+    "parent": [
+      "Q672055"
+    ],
+    "child": []
   },
   {
-    "id": "Q279693",
-    "name": "Stefan Uroš V of Serbia",
-    "birthYear": "1337",
-    "deathYear": "1371",
-    "gender": "male",
-    "country": "Serbian Empire",
+    "id": "Q269875",
+    "name": "Seaxburh of Ely",
+    "birthYear": "640",
+    "deathYear": "699",
+    "gender": "female",
+    "country": "",
     "status": [
       "saint"
     ],
     "titles": [
-      "Emperor of the Serbs"
-    ],
-    "occupations": [
-      "ruler"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q280869",
-    "name": "Titus Flavius Clemens",
-    "birthYear": "50",
-    "deathYear": "95",
-    "gender": "male",
-    "country": "Ancient Rome",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "Roman consul"
+      "abbess"
     ],
     "occupations": [
       "politician"
@@ -775,478 +189,68 @@
     "patronages": [],
     "orders": [],
     "studentOf": [],
-    "influencedBy": []
+    "influencedBy": [],
+    "sibling": [
+      "Q3733656",
+      "Q261097",
+      "Q7665817",
+      "Q16851160",
+      "Q2480764"
+    ],
+    "spouse": [
+      "Q617837"
+    ],
+    "parent": [
+      "Q559247"
+    ],
+    "child": [
+      "Q2002608",
+      "Q880215",
+      "Q27102470",
+      "Q495540"
+    ]
   },
   {
-    "id": "Q283387",
-    "name": "Alfanus I",
-    "birthYear": "1015",
-    "deathYear": "1085",
+    "id": "Q271361",
+    "name": "Ælfheah the Bald",
+    "birthYear": "950",
+    "deathYear": "951",
     "gender": "male",
     "country": "",
     "status": [
       "saint"
     ],
     "titles": [
-      "abbot",
-      "bishop",
-      "archbishop of Salerno"
+      "diocesan bishop",
+      "Roman Catholic Bishop of Winchester"
     ],
     "occupations": [
-      "translator",
-      "Catholic theologian",
-      "architect",
-      "Catholic priest",
-      "physician",
-      "poet",
-      "writer",
-      "archbishop"
+      "Catholic bishop",
+      "Catholic priest"
     ],
     "patronages": [],
     "orders": [
       "Benedictines"
     ],
     "studentOf": [],
-    "influencedBy": []
+    "influencedBy": [],
+    "sibling": [],
+    "spouse": [],
+    "parent": [],
+    "child": []
   },
   {
-    "id": "Q283447",
-    "name": "Lambert of Maastricht",
-    "birthYear": "635",
-    "deathYear": "705",
+    "id": "Q271379",
+    "name": "Ælfwald I",
+    "birthYear": "759",
+    "deathYear": "788",
     "gender": "male",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "Roman Catholic Bishop of Maastricht"
-    ],
-    "occupations": [
-      "Catholic priest",
-      "Catholic bishop"
-    ],
-    "patronages": [],
-    "orders": [
-      "Benedictines"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q284323",
-    "name": "Eulalia of Mérida",
-    "birthYear": "290",
-    "deathYear": "304",
-    "gender": "female",
-    "country": "Ancient Rome",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q285570",
-    "name": "Feodosia Morozova",
-    "birthYear": "1632",
-    "deathYear": "1675",
-    "gender": "female",
-    "country": "Tsardom of Russia",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "nun"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q285693",
-    "name": "Hosius of Corduba",
-    "birthYear": "256",
-    "deathYear": "357",
-    "gender": "male",
-    "country": "Ancient Rome",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "episcope",
-      "bishop",
-      "Roman Catholic Bishop of Cordoba"
-    ],
-    "occupations": [
-      "Catholic priest",
-      "writer"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q286238",
-    "name": "Thaïs",
-    "birthYear": "350",
-    "deathYear": "400",
-    "gender": "female",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "courtesan",
-      "hermit"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q286818",
-    "name": "Emilie de Rodat",
-    "birthYear": "1787",
-    "deathYear": "1852",
-    "gender": "female",
-    "country": "France",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "mystic",
-      "nun",
-      "founder of Catholic religious community"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q287308",
-    "name": "Wolbodo",
-    "birthYear": "1000",
-    "deathYear": "1021",
-    "gender": "male",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "Roman Catholic Bishop of Liege",
-      "bishop"
-    ],
-    "occupations": [
-      "bishop",
-      "teacher",
-      "Catholic priest"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q287916",
-    "name": "Finbarr of Cork",
-    "birthYear": "550",
-    "deathYear": "623",
-    "gender": "male",
-    "country": "Kingdom of Munster",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "bishop"
-    ],
-    "occupations": [
-      "Catholic priest"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [
-      "Q331697"
-    ],
-    "influencedBy": []
-  },
-  {
-    "id": "Q288295",
-    "name": "Justina of Padua",
-    "birthYear": "300",
-    "deathYear": "304",
-    "gender": "female",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q288825",
-    "name": "Jeanne de Lestonnac",
-    "birthYear": "1556",
-    "deathYear": "1640",
-    "gender": "female",
-    "country": "France",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "religious sister",
-      "founder of Catholic religious community"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q288906",
-    "name": "Paula Frassinetti",
-    "birthYear": "1809",
-    "deathYear": "1882",
-    "gender": "female",
-    "country": "Kingdom of Italy",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "nun",
-      "founder of Catholic religious community",
-      "religious"
-    ],
-    "patronages": [],
-    "orders": [
-      "Dominican Order"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q289346",
-    "name": "Saint Paulina",
-    "birthYear": "1865",
-    "deathYear": "1942",
-    "gender": "female",
-    "country": "Brazil",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "Catholic priest",
-      "Christian nun"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q289730",
-    "name": "Eucharius",
-    "birthYear": "101",
-    "deathYear": "300",
-    "gender": "male",
-    "country": "http://www.wikidata.org/.well-known/genid/e5831e727caec65a606a6f2f2b1ce0ca",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "ancient Bishop of Trier"
-    ],
-    "occupations": [
-      "Catholic priest",
-      "Catholic bishop"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q289872",
-    "name": "Candida Maria of Jesus",
-    "birthYear": "1845",
-    "deathYear": "1912",
-    "gender": "female",
-    "country": "Spain",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "nun"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q290771",
-    "name": "Arethas of Caesarea",
-    "birthYear": "860",
-    "deathYear": "935",
-    "gender": "male",
-    "country": "Byzantine Empire",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "archbishop"
-    ],
-    "occupations": [
-      "Eastern Orthodox priest",
-      "philosopher",
-      "bibliographer",
-      "writer",
-      "theologian"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [
-      "Q243187"
-    ],
-    "influencedBy": []
-  },
-  {
-    "id": "Q290786",
-    "name": "Stefan Dragutin",
-    "birthYear": "1252",
-    "deathYear": "1316",
-    "gender": "male",
-    "country": "Serbia",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "king"
-    ],
-    "occupations": [
-      "monarch"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q290866",
-    "name": "Maria De Mattias",
-    "birthYear": "1805",
-    "deathYear": "1866",
-    "gender": "female",
-    "country": "Kingdom of Italy",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "founder",
-      "nun",
-      "founder of Catholic religious community",
-      "religious"
-    ],
-    "patronages": [],
-    "orders": [
-      "Adorers of the Blood of Christ"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q291529",
-    "name": "Eanflæd",
-    "birthYear": "626",
-    "deathYear": "704",
-    "gender": "female",
     "country": "Kingdom of Northumbria",
     "status": [
       "saint"
     ],
     "titles": [
-      "abbess"
-    ],
-    "occupations": [
-      "nun"
-    ],
-    "patronages": [],
-    "orders": [
-      "Benedictines"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q291671",
-    "name": "Sunniva",
-    "birthYear": "901",
-    "deathYear": "",
-    "gender": "female",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q291708",
-    "name": "Lutgardis",
-    "birthYear": "1182",
-    "deathYear": "1246",
-    "gender": "female",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "nun"
-    ],
-    "patronages": [],
-    "orders": [
-      "Cistercians"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q291756",
-    "name": "Ariadne",
-    "birthYear": "452",
-    "deathYear": "515",
-    "gender": "female",
-    "country": "Byzantine Empire",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "Byzantine emperor"
+      "King of Northumbria"
     ],
     "occupations": [
       "sovereign"
@@ -1254,15 +258,24 @@
     "patronages": [],
     "orders": [],
     "studentOf": [],
-    "influencedBy": []
+    "influencedBy": [],
+    "sibling": [],
+    "spouse": [],
+    "parent": [
+      "Q667227"
+    ],
+    "child": [
+      "Q9252665",
+      "Q9252655"
+    ]
   },
   {
-    "id": "Q291907",
-    "name": "Valeria of Milan",
-    "birthYear": "50",
-    "deathYear": "200",
+    "id": "Q271668",
+    "name": "Melania the Younger",
+    "birthYear": "383",
+    "deathYear": "439",
     "gender": "female",
-    "country": "Ancient Rome",
+    "country": "",
     "status": [
       "saint"
     ],
@@ -1271,74 +284,78 @@
     "patronages": [],
     "orders": [],
     "studentOf": [],
-    "influencedBy": []
+    "influencedBy": [],
+    "sibling": [],
+    "spouse": [
+      "Q40749451"
+    ],
+    "parent": [
+      "Q29837925",
+      "Q48869101"
+    ],
+    "child": []
   },
   {
-    "id": "Q292196",
-    "name": "Juliana Falconieri",
-    "birthYear": "1270",
-    "deathYear": "1341",
+    "id": "Q271780",
+    "name": "Clare of Montefalco",
+    "birthYear": "1268",
+    "deathYear": "1308",
     "gender": "female",
     "country": "",
     "status": [
       "saint"
     ],
-    "titles": [],
+    "titles": [
+      "abbess"
+    ],
     "occupations": [
-      "nun",
-      "religious"
+      "mystic",
+      "abbess",
+      "nun"
     ],
     "patronages": [],
     "orders": [
-      "Servite Order"
+      "Augustinian nuns"
     ],
     "studentOf": [],
-    "influencedBy": []
+    "influencedBy": [],
+    "sibling": [],
+    "spouse": [],
+    "parent": [],
+    "child": []
   },
   {
-    "id": "Q292219",
-    "name": "Flavia Domitilla",
-    "birthYear": "",
-    "deathYear": "",
-    "gender": "female",
+    "id": "Q272087",
+    "name": "Tatian",
+    "birthYear": "120",
+    "deathYear": "173",
+    "gender": "male",
     "country": "Ancient Rome",
     "status": [
       "saint"
     ],
     "titles": [],
-    "occupations": [],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q292282",
-    "name": "Lydia of Thyatira",
-    "birthYear": "100",
-    "deathYear": "100",
-    "gender": "female",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
     "occupations": [
-      "merchant",
-      "textile merchant"
+      "author",
+      "philosopher",
+      "theologian"
     ],
     "patronages": [],
     "orders": [],
     "studentOf": [
-      "Q9200"
+      "Q185117"
     ],
-    "influencedBy": []
+    "influencedBy": [],
+    "sibling": [],
+    "spouse": [],
+    "parent": [],
+    "child": []
   },
   {
-    "id": "Q295086",
-    "name": "Guntram",
-    "birthYear": "532",
-    "deathYear": "593",
+    "id": "Q243872",
+    "name": "Q243872",
+    "birthYear": "870",
+    "deathYear": "900",
     "gender": "male",
     "country": "",
     "status": [
@@ -1353,959 +370,218 @@
     "patronages": [],
     "orders": [],
     "studentOf": [],
-    "influencedBy": []
+    "influencedBy": [],
+    "sibling": [
+      "Q24039098",
+      "Q157099",
+      "Q1764987"
+    ],
+    "spouse": [
+      "Q7163638"
+    ],
+    "parent": [
+      "Q154936",
+      "Q24039105"
+    ],
+    "child": [
+      "Q24039102",
+      "Q24039101",
+      "Q130711682"
+    ]
   },
   {
-    "id": "Q297584",
-    "name": "Theophanes the Confessor",
-    "birthYear": "759",
-    "deathYear": "817",
-    "gender": "male",
-    "country": "Byzantine Empire",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "abbot"
-    ],
-    "occupations": [
-      "chronicler",
-      "writer",
-      "historian"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q298845",
-    "name": "Saint Florian",
-    "birthYear": "250",
-    "deathYear": "304",
-    "gender": "male",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "military officer",
-      "military personnel"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q299832",
-    "name": "Felicula",
-    "birthYear": "400",
-    "deathYear": "",
+    "id": "Q244007",
+    "name": "Tamar of Georgia",
+    "birthYear": "1166",
+    "deathYear": "1213",
     "gender": "female",
-    "country": "",
+    "country": "Kingdom of Georgia",
     "status": [
       "saint"
     ],
-    "titles": [],
-    "occupations": [],
+    "titles": [
+      "King of Georgia"
+    ],
+    "occupations": [
+      "politician"
+    ],
     "patronages": [],
     "orders": [],
     "studentOf": [],
-    "influencedBy": []
+    "influencedBy": [],
+    "sibling": [
+      "Q2915861"
+    ],
+    "spouse": [
+      "Q2028302",
+      "Q1362993"
+    ],
+    "parent": [
+      "Q542017",
+      "Q3651713"
+    ],
+    "child": [
+      "Q714595",
+      "Q272443"
+    ]
   },
   {
-    "id": "Q299955",
-    "name": "Saint Marcellina",
-    "birthYear": "327",
-    "deathYear": "397",
+    "id": "Q244383",
+    "name": "Rose of Lima",
+    "birthYear": "1586",
+    "deathYear": "1617",
     "gender": "female",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q303354",
-    "name": "Theognostus",
-    "birthYear": "1350",
-    "deathYear": "1353",
-    "gender": "male",
-    "country": "Byzantine Empire",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "Metropolitan of Kiev and all Rus'",
-      "archbishop",
-      "metropolitan"
-    ],
-    "occupations": [
-      "Eastern Orthodox priest"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q303640",
-    "name": "Marcian of Tortona",
-    "birthYear": "100",
-    "deathYear": "120",
-    "gender": "male",
-    "country": "Ancient Rome",
+    "country": "http://www.wikidata.org/.well-known/genid/485a66f23c9c911ae7589857a07a0366",
     "status": [
       "saint"
     ],
     "titles": [],
     "occupations": [
-      "bishop",
-      "Catholic priest"
+      "mystic",
+      "member of Roman Catholic religious orders and societies"
     ],
     "patronages": [],
-    "orders": [],
+    "orders": [
+      "Third Order of Saint Dominic"
+    ],
     "studentOf": [],
-    "influencedBy": []
+    "influencedBy": [],
+    "sibling": [],
+    "spouse": [],
+    "parent": [
+      "Q10897649"
+    ],
+    "child": []
   },
   {
-    "id": "Q304832",
-    "name": "Caesarius of Arles",
-    "birthYear": "470",
-    "deathYear": "542",
-    "gender": "male",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "archbishop",
-      "bishop"
-    ],
-    "occupations": [
-      "Catholic bishop",
-      "Catholic priest",
-      "writer"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q306658",
-    "name": "Abbo of Fleury",
-    "birthYear": "945",
-    "deathYear": "1004",
+    "id": "Q244413",
+    "name": "Vincent de Paul",
+    "birthYear": "1581",
+    "deathYear": "1660",
     "gender": "male",
     "country": "Kingdom of France",
     "status": [
       "saint"
     ],
     "titles": [
-      "Abbot of Saint-Benoît-sur-Loire"
-    ],
-    "occupations": [
-      "mathematician",
-      "philosopher",
-      "writer",
-      "monk"
-    ],
-    "patronages": [],
-    "orders": [
-      "Benedictines"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q307724",
-    "name": "Abdas of Susa",
-    "birthYear": "400",
-    "deathYear": "418",
-    "gender": "male",
-    "country": "Sasanian Empire",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "bishop"
-    ],
-    "occupations": [
-      "Catholic priest"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q309772",
-    "name": "Athenagoras of Athens",
-    "birthYear": "",
-    "deathYear": "",
-    "gender": "male",
-    "country": "Classical Athens",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "theologian",
-      "philosopher",
-      "writer"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q309953",
-    "name": "Gregory the Illuminator",
-    "birthYear": "252",
-    "deathYear": "329",
-    "gender": "male",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "Catholicos of All Armenians"
-    ],
-    "occupations": [
-      "illuminator",
-      "religious leader",
-      "presbyter"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q310152",
-    "name": "Eric IX of Sweden",
-    "birthYear": "1120",
-    "deathYear": "1160",
-    "gender": "male",
-    "country": "Sweden",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "Monarch of Sweden"
-    ],
-    "occupations": [
-      "monarch"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q310440",
-    "name": "Carloman",
-    "birthYear": "710",
-    "deathYear": "754",
-    "gender": "male",
-    "country": "Francia",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "Mayor of the Palace"
-    ],
-    "occupations": [
-      "politician"
-    ],
-    "patronages": [],
-    "orders": [
-      "Benedictines"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q310584",
-    "name": "Gamaliel",
-    "birthYear": "-100",
-    "deathYear": "52",
-    "gender": "male",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "Nasi"
-    ],
-    "occupations": [
-      "jurist",
-      "rabbi",
-      "Pharisees"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [
-      "Q733042"
-    ],
-    "influencedBy": []
-  },
-  {
-    "id": "Q257960",
-    "name": "Felicitas of Rome",
-    "birthYear": "101",
-    "deathYear": "165",
-    "gender": "female",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q258369",
-    "name": "Peter Damian",
-    "birthYear": "1007",
-    "deathYear": "1072",
-    "gender": "male",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "abbot",
-      "cardinal",
-      "apostolic administrator",
-      "cardinal-bishop of Ostia"
+      "chaplain"
     ],
     "occupations": [
       "Catholic theologian",
-      "diplomat",
-      "philosopher",
+      "founder of Catholic religious community",
+      "priest",
+      "Catholic priest"
+    ],
+    "patronages": [],
+    "orders": [
+      "Daughters of Charity of Saint Vincent de Paul",
+      "Congregation of the Mission"
+    ],
+    "studentOf": [],
+    "influencedBy": [],
+    "sibling": [],
+    "spouse": [],
+    "parent": [],
+    "child": []
+  },
+  {
+    "id": "Q245399",
+    "name": "Zygmunt Szczęsny Feliński",
+    "birthYear": "1822",
+    "deathYear": "1895",
+    "gender": "male",
+    "country": "Poland",
+    "status": [
+      "saint"
+    ],
+    "titles": [
+      "titular archbishop",
+      "Roman Catholic Archbishop of Warsaw"
+    ],
+    "occupations": [
+      "Catholic bishop",
       "Catholic priest",
-      "Catholic bishop"
-    ],
-    "patronages": [],
-    "orders": [
-      "Benedictines"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q259551",
-    "name": "Itta of Metz",
-    "birthYear": "592",
-    "deathYear": "652",
-    "gender": "female",
-    "country": "Austrasia",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "abbess"
-    ],
-    "occupations": [
-      "nun"
-    ],
-    "patronages": [],
-    "orders": [
-      "Benedictines"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q231300",
-    "name": "Scholastica",
-    "birthYear": "480",
-    "deathYear": "543",
-    "gender": "female",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "abbess"
-    ],
-    "occupations": [
-      "nun"
-    ],
-    "patronages": [],
-    "orders": [
-      "Nuns of the order of Saint Benedict"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q231919",
-    "name": "Pulcheria",
-    "birthYear": "399",
-    "deathYear": "453",
-    "gender": "female",
-    "country": "Byzantine Empire",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "Byzantine emperor"
-    ],
-    "occupations": [
-      "sovereign"
+      "Catholic deacon"
     ],
     "patronages": [],
     "orders": [],
     "studentOf": [],
-    "influencedBy": []
+    "influencedBy": [],
+    "sibling": [
+      "Q118109449"
+    ],
+    "spouse": [],
+    "parent": [
+      "Q3917377"
+    ],
+    "child": []
   },
   {
-    "id": "Q232031",
-    "name": "Margaret of Hungary",
-    "birthYear": "1242",
-    "deathYear": "1270",
-    "gender": "female",
-    "country": "Hungary",
+    "id": "Q245621",
+    "name": "Roque González de Santa Cruz",
+    "birthYear": "1576",
+    "deathYear": "1628",
+    "gender": "male",
+    "country": "Spanish Empire",
     "status": [
       "saint"
     ],
-    "titles": [
-      "abbess"
-    ],
+    "titles": [],
     "occupations": [
-      "religious sister"
+      "missionary",
+      "regular priest",
+      "Catholic priest"
     ],
     "patronages": [],
     "orders": [
-      "Nuns of the Order of Preachers"
+      "Society of Jesus"
     ],
     "studentOf": [],
-    "influencedBy": []
+    "influencedBy": [],
+    "sibling": [],
+    "spouse": [],
+    "parent": [],
+    "child": []
   },
   {
-    "id": "Q232365",
-    "name": "Clotilde",
-    "birthYear": "474",
-    "deathYear": "545",
+    "id": "Q238352",
+    "name": "Bertha of Kent",
+    "birthYear": "565",
+    "deathYear": "612",
     "gender": "female",
-    "country": "Kingdom of Burgundy",
+    "country": "Kingdom of Kent",
     "status": [
       "saint"
     ],
-    "titles": [
-      "king of Franks"
-    ],
+    "titles": [],
     "occupations": [
       "consort"
     ],
     "patronages": [],
     "orders": [],
     "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q232427",
-    "name": "Saint Apollonia",
-    "birthYear": "150",
-    "deathYear": "249",
-    "gender": "female",
-    "country": "",
-    "status": [
-      "saint"
+    "influencedBy": [],
+    "sibling": [
+      "Q9777436",
+      "Q9655632"
     ],
-    "titles": [],
-    "occupations": [],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q232525",
-    "name": "Theodelinda",
-    "birthYear": "570",
-    "deathYear": "628",
-    "gender": "female",
-    "country": "",
-    "status": [
-      "saint"
+    "spouse": [
+      "Q272173"
     ],
-    "titles": [
-      "queen consort"
+    "parent": [
+      "Q453167",
+      "Q243453"
     ],
-    "occupations": [
-      "monarch",
-      "patron of the arts"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q316440",
-    "name": "Saint Savvas the Sanctified",
-    "birthYear": "439",
-    "deathYear": "532",
-    "gender": "male",
-    "country": "Byzantine Empire",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "abbot"
-    ],
-    "occupations": [
-      "Eastern Christian monk"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [
-      "Q441249",
-      "Q1281938"
-    ],
-    "influencedBy": []
-  },
-  {
-    "id": "Q316599",
-    "name": "Saint Maurice",
-    "birthYear": "250",
-    "deathYear": "287",
-    "gender": "male",
-    "country": "Ancient Rome",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "soldier"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q315191",
-    "name": "Andrey Bogolyubsky",
-    "birthYear": "1111",
-    "deathYear": "1174",
-    "gender": "male",
-    "country": "Principality of Vyshgorod",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "sovereign"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q315312",
-    "name": "Januarius",
-    "birthYear": "272",
-    "deathYear": "305",
-    "gender": "male",
-    "country": "Ancient Rome",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "diocesan bishop"
-    ],
-    "occupations": [
-      "Catholic bishop",
-      "bishop",
-      "Catholic priest"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q315640",
-    "name": "Francisco",
-    "birthYear": "1416",
-    "deathYear": "1507",
-    "gender": "male",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "anchorite",
-      "founder of Catholic religious community",
-      "hermit"
-    ],
-    "patronages": [],
-    "orders": [
-      "Order of the Minims"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q315693",
-    "name": "Gebhard of Constance",
-    "birthYear": "949",
-    "deathYear": "995",
-    "gender": "male",
-    "country": "Germany",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "bishop",
-      "diocesan bishop"
-    ],
-    "occupations": [
-      "Catholic bishop",
-      "bishop",
-      "Catholic priest"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q230507",
-    "name": "Saint Margaret of Scotland",
-    "birthYear": "1045",
-    "deathYear": "1093",
-    "gender": "female",
-    "country": "Kingdom of England",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "queen regnant"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q312899",
-    "name": "Sergius of Radonezh",
-    "birthYear": "1322",
-    "deathYear": "1392",
-    "gender": "male",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "abbot"
-    ],
-    "occupations": [
-      "anchorite",
-      "hegumen",
-      "Eastern Orthodox monk",
-      "Eastern Orthodox priest"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q313153",
-    "name": "Haakon V of Norway",
-    "birthYear": "1270",
-    "deathYear": "1319",
-    "gender": "male",
-    "country": "Norway",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "Monarch of Norway"
-    ],
-    "occupations": [],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q313373",
-    "name": "Pepin of Landen",
-    "birthYear": "585",
-    "deathYear": "640",
-    "gender": "male",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "Mayor of the Palace"
-    ],
-    "occupations": [
-      "politician"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q313795",
-    "name": "John Cassian",
-    "birthYear": "360",
-    "deathYear": "435",
-    "gender": "male",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "abbot"
-    ],
-    "occupations": [
-      "theologian",
-      "writer",
-      "Christian monk"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [
-      "Q437869"
-    ],
-    "influencedBy": []
-  },
-  {
-    "id": "Q313803",
-    "name": "Lawrence of Brindisi",
-    "birthYear": "1559",
-    "deathYear": "1619",
-    "gender": "male",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "ambassador",
-      "superior general",
-      "General Vicar of the Capuchins"
-    ],
-    "occupations": [
-      "Doctor of the Church",
-      "Catholic priest",
-      "diplomat",
-      "Catholic theologian"
-    ],
-    "patronages": [],
-    "orders": [
-      "Order of Friars Minor Capuchin"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q314027",
-    "name": "Simpert",
-    "birthYear": "750",
-    "deathYear": "807",
-    "gender": "male",
-    "country": "Germany",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "abbot",
-      "diocesan bishop"
-    ],
-    "occupations": [
-      "bishop",
-      "Catholic priest"
-    ],
-    "patronages": [],
-    "orders": [
-      "Benedictines"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q314339",
-    "name": "Fyodor Ushakov",
-    "birthYear": "1745",
-    "deathYear": "1817",
-    "gender": "male",
-    "country": "Russian Empire",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "military officer"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q314346",
-    "name": "Stefan Uroš III",
-    "birthYear": "1276",
-    "deathYear": "1331",
-    "gender": "male",
-    "country": "Serbia",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "king"
-    ],
-    "occupations": [
-      "sovereign"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q310633",
-    "name": "Demetrius of Thessaloniki",
-    "birthYear": "300",
-    "deathYear": "306",
-    "gender": "male",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "religious role",
-      "soldier",
-      "military personnel"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q311057",
-    "name": "Boris I of Bulgaria",
-    "birthYear": "827",
-    "deathYear": "907",
-    "gender": "male",
-    "country": "Bulgaria",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "tsar"
-    ],
-    "occupations": [
-      "monarch",
-      "monk"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q311291",
-    "name": "Yaropolk I of Kiev",
-    "birthYear": "",
-    "deathYear": "978",
-    "gender": "male",
-    "country": "Kievan Rus'",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "Grand Prince of Kiev"
-    ],
-    "occupations": [
-      "monarch"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q312057",
-    "name": "Saint Casimir",
-    "birthYear": "1458",
-    "deathYear": "1484",
-    "gender": "male",
-    "country": "Grand Duchy of Lithuania",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "politician"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q312348",
-    "name": "Thurgood Marshall",
-    "birthYear": "1908",
-    "deathYear": "1993",
-    "gender": "male",
-    "country": "United States",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "Associate Justice of the Supreme Court of the United States",
-      "Solicitor General of the United States",
-      "Judge of the United States Court of Appeals for the Second Circuit"
-    ],
-    "occupations": [
-      "politician",
-      "civil rights advocate",
-      "judge",
-      "lawyer",
-      "jurist"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": [
-      "Q187930"
+    "child": [
+      "Q2266026",
+      "Q468842"
     ]
   },
   {
-    "id": "Q312551",
-    "name": "Kabir",
-    "birthYear": "1440",
-    "deathYear": "1518",
+    "id": "Q238744",
+    "name": "Peter of Verona",
+    "birthYear": "1206",
+    "deathYear": "1252",
     "gender": "male",
     "country": "",
     "status": [
@@ -2313,234 +589,103 @@
     ],
     "titles": [],
     "occupations": [
-      "poet",
-      "weaver",
-      "philosopher",
-      "writer"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q154938",
-    "name": "Bede",
-    "birthYear": "672",
-    "deathYear": "735",
-    "gender": "male",
-    "country": "Kingdom of Northumbria",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "hagiographer",
-      "translator",
-      "hymnwriter",
-      "chronicler",
-      "church historian",
-      "monk",
-      "poet",
-      "writer",
-      "theologian",
-      "Bible translator",
-      "historian"
-    ],
-    "patronages": [],
-    "orders": [
-      "Benedictines"
-    ],
-    "studentOf": [
-      "Q552201",
-      "Q1054504"
-    ],
-    "influencedBy": []
-  },
-  {
-    "id": "Q158504",
-    "name": "Clement of Ohrid",
-    "birthYear": "840",
-    "deathYear": "916",
-    "gender": "male",
-    "country": "First Bulgarian Empire",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "bishop"
-    ],
-    "occupations": [
-      "missionary",
-      "archbishop",
-      "writer"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [
-      "Q351026",
-      "Q470621"
-    ],
-    "influencedBy": []
-  },
-  {
-    "id": "Q54798",
-    "name": "Cornelius",
-    "birthYear": "180",
-    "deathYear": "253",
-    "gender": "male",
-    "country": "Ancient Rome",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "Pope"
-    ],
-    "occupations": [
-      "Catholic priest",
-      "author"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q55780",
-    "name": "Samarth Ramdas Swami",
-    "birthYear": "1608",
-    "deathYear": "1681",
-    "gender": "male",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "poet",
-      "writer"
-    ],
-    "patronages": [],
-    "orders": [],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q57520",
-    "name": "Hedwig of Silesia",
-    "birthYear": "1174",
-    "deathYear": "1243",
-    "gender": "female",
-    "country": "Holy Roman Empire",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "consort"
-    ],
-    "patronages": [],
-    "orders": [
-      "Cistercians"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q58432",
-    "name": "Hugh of Châteauneuf",
-    "birthYear": "1053",
-    "deathYear": "1132",
-    "gender": "male",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "Roman Catholic Bishop of Grenoble"
-    ],
-    "occupations": [
-      "writer"
-    ],
-    "patronages": [],
-    "orders": [
-      "Benedictines"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q58568",
-    "name": "Stephen IX",
-    "birthYear": "1020",
-    "deathYear": "1058",
-    "gender": "male",
-    "country": "",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "cardinal-deacon",
-      "abbot of Monte Cassino",
-      "Pope"
-    ],
-    "occupations": [
-      "Catholic priest"
-    ],
-    "patronages": [],
-    "orders": [
-      "Benedictines"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q59071",
-    "name": "Peter de Regalado",
-    "birthYear": "1390",
-    "deathYear": "1456",
-    "gender": "male",
-    "country": "Crown of Castile",
-    "status": [
-      "saint"
-    ],
-    "titles": [],
-    "occupations": [
-      "Latin Catholic priest"
-    ],
-    "patronages": [],
-    "orders": [
-      "Franciscans"
-    ],
-    "studentOf": [],
-    "influencedBy": []
-  },
-  {
-    "id": "Q60059",
-    "name": "Albertus Magnus",
-    "birthYear": "1200",
-    "deathYear": "1280",
-    "gender": "male",
-    "country": "Holy Roman Empire",
-    "status": [
-      "saint"
-    ],
-    "titles": [
-      "Roman Catholic Bishop of Regensburg"
-    ],
-    "occupations": [
-      "naturalist"
+      "presbyter",
+      "inquisitor"
     ],
     "patronages": [],
     "orders": [
       "Dominican Order"
     ],
-    "studentOf": [
-      "Q60790",
-      "Q42887239"
+    "studentOf": [],
+    "influencedBy": [],
+    "sibling": [],
+    "spouse": [],
+    "parent": [],
+    "child": []
+  },
+  {
+    "id": "Q237886",
+    "name": "Adela of Normandy",
+    "birthYear": "1067",
+    "deathYear": "1138",
+    "gender": "female",
+    "country": "",
+    "status": [
+      "saint"
     ],
-    "influencedBy": [
-      "Q8011"
+    "titles": [
+      "prior",
+      "regent"
+    ],
+    "occupations": [
+      "aristocrat"
+    ],
+    "patronages": [],
+    "orders": [],
+    "studentOf": [],
+    "influencedBy": [],
+    "sibling": [
+      "Q45465",
+      "Q220994",
+      "Q101384",
+      "Q3498141",
+      "Q102005",
+      "Q2120325",
+      "Q2994836"
+    ],
+    "spouse": [
+      "Q316006"
+    ],
+    "parent": [
+      "Q391944",
+      "Q37594"
+    ],
+    "child": [
+      "Q60849",
+      "Q4272268",
+      "Q780224",
+      "Q2554504",
+      "Q361369",
+      "Q1363205"
+    ]
+  },
+  {
+    "id": "Q243122",
+    "name": "Ferdinand III of Castille",
+    "birthYear": "1199",
+    "deathYear": "1252",
+    "gender": "male",
+    "country": "Kingdom of Leon",
+    "status": [
+      "saint"
+    ],
+    "titles": [
+      "Monarch of the Kingdom of Castile",
+      "Monarch of Castile and Leon"
+    ],
+    "occupations": [
+      "ruler",
+      "Miles Christianus"
+    ],
+    "patronages": [],
+    "orders": [
+      "Third Order of Saint Francis"
+    ],
+    "studentOf": [],
+    "influencedBy": [],
+    "sibling": [
+      "Q5860480",
+      "Q5973395"
+    ],
+    "spouse": [
+      "Q603883"
+    ],
+    "parent": [
+      "Q232323",
+      "Q316115"
+    ],
+    "child": [
+      "Q2423033"
     ]
   }
 ]
